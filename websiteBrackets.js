@@ -383,7 +383,7 @@ function updatePerfectBracketsText(){
     const perfectBracketsDisplay = document.getElementById('perfectBrackets');
     if(perfectBracketsIds.length != 0){
         perfectBracketsDisplay.style.display = "normal";
-        perfectBracketsDisplay.innerHTML = `There are ${perfectBracketsIds.length} perfect brackets left, including ${perfectBracketsIds.splice(0,10)}`;
+        perfectBracketsDisplay.innerHTML = `There are ${perfectBracketsIds.length} perfect brackets left, including ${JSON.parse(JSON.stringify(perfectBracketsIds)).splice(0,10)}`;
     } else {
         perfectBracketsDisplay.style.display = "none";
     }
