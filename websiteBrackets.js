@@ -290,10 +290,12 @@ let bracket = {};
 let bracketId = 0;
 
 let perfectBracketsIds =[];
+let bestBracketsIds = [];
 
 fetchCorrectBracket();
 getFirstBracket();
 fetchNumberOfPerfectBrackets();
+fetchBestBrackets();
 
 document.getElementById('bracketNumberSelector').addEventListener('keypress', async (e) => {
     if(e.key === 'Enter'){
@@ -331,6 +333,37 @@ async function fetchNumberOfPerfectBrackets(){
     }
 }
 
+async function fetchBestBrackets(){
+    try {
+        const response = await fetch(`https://millionmarchmadnessbrackets.loca.lt/GetBestBrackets`);
+        if (response.ok) {
+            const jsonResponse = await response.json();
+            bestBracketsIds = jsonResponse;
+            updateBestBracketsText();
+            return;
+        }
+        throw new Error('Request failed!');
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+async function updateCorrectBracket(newCorrectBracket) {
+    if(newCorrectBracket.constructor.name !== "String"){
+        newCorrectBracket = JSON.stringify(newCorrectBracket);
+    }
+    try {
+        const response = await fetch(`https://millionmarchmadnessbrackets.loca.lt/PostCorrectBracket?correctBracket=${newCorrectBracket}`);
+        if (response.ok) {
+            const jsonResponse = await response.json();
+            return;
+        }
+        throw new Error('Request failed!');
+    } catch (error) {
+        console.log(error);
+    }
+}
+
 async function fetchCorrectBracket(){
     try {
         const response = await fetch(`https://millionmarchmadnessbrackets.loca.lt/CorrectBracket`);
@@ -348,7 +381,25 @@ async function fetchCorrectBracket(){
 
 function updatePerfectBracketsText(){
     const perfectBracketsDisplay = document.getElementById('perfectBrackets');
-    perfectBracketsDisplay.innerHTML = `There are ${perfectBracketsIds.length} perfect brackets left, including ${perfectBracketsIds.splice(0,10)}`;
+    if(perfectBracketsIds.length != 0){
+        perfectBracketsDisplay.style.display = "normal";
+        perfectBracketsDisplay.innerHTML = `There are ${perfectBracketsIds.length} perfect brackets left, including ${perfectBracketsIds.splice(0,10)}`;
+    } else {
+        perfectBracketsDisplay.style.display = "none";
+    }
+
+    updateBestBracketsText();
+}
+
+function updateBestBracketsText(){
+    const bestBracketsDisplay = document.getElementById('bestBrackets');
+    if(perfectBracketsIds.length == 0){
+        bestBracketsDisplay.style.display = "normal";
+        bestBracketsDisplay.innerHTML = `There best brackets are ${bestBracketsIds}`;
+    } else {
+        bestBracketsDisplay.style.display = "none";
+    }
+    
 }
 
 async function getFirstBracket(){
@@ -506,5 +557,5 @@ function readBracket(){
 
 function updateTitle() {
     const title = document.getElementById('title');
-    title.innerHTML = `You are viewing Bracket ${bracketId + 1} - ${bracket.final} Wins`;
+    title.innerHTML = `You are viewing Bracket ${bracketId + 1} - ${bracket.final} Wins (${bracket.points}) points`;
 }
