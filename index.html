@@ -1,0 +1,504 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./websiteBrackets.js" defer></script>
+    <title>Million Brackets</title>
+  </head>
+  <body>
+    <h1 class="title" style="text-align: center;">Million March Madness Brackets</h1>
+    <h1 class = "subtitle" id="title" style="text-align: center;">You are viewing Bracket...</h1>
+    <h1 class = "subtitle2" id="perfectBrackets" style="text-align: center;">There are _ perfect brackets left, including [,,,,]</h1>
+    <div style="display: flex; justify-content: center;">
+      <label> Select a bracket: </label> 
+      &nbsp;
+    <input type="number" id="bracketNumberSelector">
+    </div>
+<h1>WEST</h1>
+<div id="tournament">
+  <ul class="round round-1">
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="westr64t1"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="westr64t16"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="westr64t8"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="westr64t9"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="westr64t5"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="westr64t12"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="westr64t4"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="westr64t13"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="westr64t6"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="westr64t11"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="westr64t3"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="westr64t14"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="westr64t7"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="westr64t10"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="westr64t2"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="westr64t15"></li>
+
+    <li class="spacer">&nbsp;</li>
+  </ul>
+  <ul class="round round-2">
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="westr64g1"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="westr64g2"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="westr64g3"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="westr64g4"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="westr64g5"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="westr64g6"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="westr64g7"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="westr64g8"></li>
+
+    <li class="spacer">&nbsp;</li>
+  </ul>
+  <ul class="round round-3">
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="westr32g1"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="westr32g2"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top " id="westr32g3"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="westr32g4"></li>
+
+    <li class="spacer">&nbsp;</li>
+  </ul>
+  <ul class="round round-4">
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="westr16g1"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="westr16g2"></li>
+    
+    <li class="spacer">&nbsp;</li>
+  </ul>   
+  <ul class="round round-5">
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="weste8g1"></li>
+    
+    <li class="spacer">&nbsp;</li>
+  </ul>  
+</div>
+<!-- -------------------------------------------------------------------- -->
+<h1>EAST</h1>
+<div id="tournament">
+  <ul class="round round-1">
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="eastr64t1"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="eastr64t16"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="eastr64t8"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="eastr64t9"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="eastr64t5"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="eastr64t12"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="eastr64t4"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="eastr64t13"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="eastr64t6"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="eastr64t11"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="eastr64t3"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="eastr64t14"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="eastr64t7"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="eastr64t10"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="eastr64t2"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="eastr64t15"></li>
+
+    <li class="spacer">&nbsp;</li>
+  </ul>
+  <ul class="round round-2">
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="eastr64g1"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="eastr64g2"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="eastr64g3"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="eastr64g4"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="eastr64g5"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="eastr64g6"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="eastr64g7"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="eastr64g8"></li>
+
+    <li class="spacer">&nbsp;</li>
+  </ul>
+  <ul class="round round-3">
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="eastr32g1"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="eastr32g2"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top " id="eastr32g3"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="eastr32g4"></li>
+
+    <li class="spacer">&nbsp;</li>
+  </ul>
+  <ul class="round round-4">
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="eastr16g1"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="eastr16g2"></li>
+    
+    <li class="spacer">&nbsp;</li>
+  </ul>   
+  <ul class="round round-5">
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="easte8g1"></li>
+    
+    <li class="spacer">&nbsp;</li>
+  </ul>  
+</div>
+
+<h1>SOUTH</h1>
+<div id="tournament">
+  <ul class="round round-1">
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="southr64t1"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="southr64t16"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="southr64t8"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="southr64t9"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="southr64t5"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="southr64t12"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="southr64t4"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="southr64t13"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="southr64t6"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="southr64t11"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="southr64t3"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="southr64t14"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="southr64t7"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="southr64t10"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="southr64t2"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="southr64t15"></li>
+
+    <li class="spacer">&nbsp;</li>
+  </ul>
+  <ul class="round round-2">
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="southr64g1"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="southr64g2"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="southr64g3"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="southr64g4"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="southr64g5"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="southr64g6"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="southr64g7"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="southr64g8"></li>
+
+    <li class="spacer">&nbsp;</li>
+  </ul>
+  <ul class="round round-3">
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="southr32g1"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="southr32g2"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top " id="southr32g3"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="southr32g4"></li>
+
+    <li class="spacer">&nbsp;</li>
+  </ul>
+  <ul class="round round-4">
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="southr16g1"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="southr16g2"></li>
+    
+    <li class="spacer">&nbsp;</li>
+  </ul>   
+  <ul class="round round-5">
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="southe8g1"></li>
+    
+    <li class="spacer">&nbsp;</li>
+  </ul>  
+</div>
+<!-- -------------------------------------------------------------------- -->
+<h1>MIDWEST</h1>
+<div id="tournament">
+  <ul class="round round-1">
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="midwestr64t1"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="midwestr64t16"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="midwestr64t8"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="midwestr64t9"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="midwestr64t5"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="midwestr64t12"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="midwestr64t4"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="midwestr64t13"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="midwestr64t6"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="midwestr64t11"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="midwestr64t3"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="midwestr64t14"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="midwestr64t7"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="midwestr64t10"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="midwestr64t2"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="midwestr64t15"></li>
+
+    <li class="spacer">&nbsp;</li>
+  </ul>
+  <ul class="round round-2">
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="midwestr64g1"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="midwestr64g2"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="midwestr64g3"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="midwestr64g4"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="midwestr64g5"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="midwestr64g6"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="midwestr64g7"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="midwestr64g8"></li>
+
+    <li class="spacer">&nbsp;</li>
+  </ul>
+  <ul class="round round-3">
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="midwestr32g1"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="midwestr32g2"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top " id="midwestr32g3"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="midwestr32g4"></li>
+
+    <li class="spacer">&nbsp;</li>
+  </ul>
+  <ul class="round round-4">
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="midwestr16g1"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="midwestr16g2"></li>
+    
+    <li class="spacer">&nbsp;</li>
+  </ul>   
+  <ul class="round round-5">
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="midweste8g1"></li>
+    
+    <li class="spacer">&nbsp;</li>
+  </ul>  
+</div>
+<h1>FINAL FOUR</h1>
+<div id="tournament">
+  <ul class="round round-1">
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="semiweste8g1"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="semieaste8g1"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="semisouthe8g1"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="semimidweste8g1"></li>
+
+    <li class="spacer">&nbsp;</li>
+  </ul>
+  <ul class="round round-2">
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="westeastsemifinal"></li>
+    <li class="game game-spacer">&nbsp;</li>
+    <li class="game game-bottom" id="southmidwestsemifinal"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+  </ul>
+  <ul class="round round-3">
+    <li class="spacer">&nbsp;</li>
+    
+    <li class="game game-top" id="final"></li>
+
+    <li class="spacer">&nbsp;</li>
+    
+  </ul>
+</div>
+  </body>
+</html>
