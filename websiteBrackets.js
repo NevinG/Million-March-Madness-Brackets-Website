@@ -299,7 +299,7 @@ document.getElementById('bracketNumberSelector').addEventListener('keypress', as
 
 async function fetchBracket(bracketNumber){
     try {
-        const response = await fetch(`https://millionmarchmadnessbrackets.loca.lt/Bracket?bracketId=${bracketId}`);
+        const response = await fetch(`https://nevinmarchmadness.loca.lt/Bracket?bracketId=${bracketId}`);
         if (response.ok) {
             const jsonResponse = await response.json();
             return jsonResponse;
@@ -312,7 +312,7 @@ async function fetchBracket(bracketNumber){
 
 async function fetchNumberOfPerfectBrackets(){
     try {
-        const response = await fetch(`https://millionmarchmadnessbrackets.loca.lt/GetPerfectBrackets`);
+        const response = await fetch(`https://nevinmarchmadness.loca.lt/GetPerfectBrackets`);
         if (response.ok) {
             const jsonResponse = await response.json();
             perfectBracketsIds = jsonResponse;
@@ -327,7 +327,7 @@ async function fetchNumberOfPerfectBrackets(){
 
 async function fetchBestBrackets(){
     try {
-        const response = await fetch(`https://millionmarchmadnessbrackets.loca.lt/GetBestBrackets`);
+        const response = await fetch(`https://nevinmarchmadness.loca.lt/GetBestBrackets`);
         if (response.ok) {
             const jsonResponse = await response.json();
             bestBracketsIds = jsonResponse;
@@ -345,7 +345,7 @@ async function updateCorrectBracket(newCorrectBracket) {
         newCorrectBracket = JSON.stringify(newCorrectBracket);
     }
     try {
-        const response = await fetch(`https://millionmarchmadnessbrackets.loca.lt/PostCorrectBracket?correctBracket=${newCorrectBracket}`);
+        const response = await fetch(`https://nevinmarchmadness.loca.lt/PostCorrectBracket?correctBracket=${newCorrectBracket}`);
         if (response.ok) {
             const jsonResponse = await response.json();
             return;
@@ -358,7 +358,7 @@ async function updateCorrectBracket(newCorrectBracket) {
 
 async function fetchCorrectBracket(){
     try {
-        const response = await fetch(`https://millionmarchmadnessbrackets.loca.lt/CorrectBracket`);
+        const response = await fetch(`https://nevinmarchmadness.loca.lt/CorrectBracket`);
         if (response.ok) {
             const jsonResponse = await response.json();
             correctBracket = jsonResponse;
