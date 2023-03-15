@@ -1,80 +1,72 @@
 let correctBracket = {};
 
-let westTeams = [
-    "Gonzaga",
-    "Duke",
-    "Texas Tech",
-    "Arkansas",
-    "UConn",
-    "Alabama",
-    "Michigan State",
-    "Boise State",
-    "Memphis",
-    "Davidson",
-    "Notre Dame",
-    "New Mexico State",
-    "Vermont",
-    "Montana State",
-    "Cal State Fullerton",
-    "Georgia State"
-];
-    
-let southTeams = [
-    "Arizona",
-    "Villanova",
-    "Tennessee",
-    "Illinois",
-    "Houston",
-    "Colorado State",
-    "Ohio State",
-    "Seton Hall",
-    "TCU",
-    "Loyola Chicago",
-    "Michigan",
-    "UAB",
-    "Chattanooga",
-    "Longwood",
-    "Delaware",
-    "Wright State"
-];
-    
-let midwestTeams = [
-    "Kansas",
-    "Auburn",
-    "Wisconsin",
-    "Providence",
-    "Iowa",
-    "LSU",
-    "USC",
-    "San Diego State",
-    "Creighton",
-    "Miami",
-    "Iowa State",
-    "Richmond",
-    "South Dakota State",
-    "Colgate",
-    "Jacksonville State",
-    "Texas Southern"
-];
-    
-    let eastTeams = [
-    "Baylor",
-    "Kentucky",
-    "Purdue",
-    "UCLA",
-    "Saint Mary's",
-    "Texas",
-    "Murray State",
-    "North Carolina",
-    "Marquette",
-    "San Francisco",
-    "Virginia Tech",
-    "Indiana",
-    "Akron",
-    "Yale",
-    "Saint Peter's",
-    "Norfolk State"
-];
+const teams ={
+    south1: "Alabama",
+    midwest1: "Houston",
+    west1: "Kansas",
+    east1: "Purdue",
+    west2: "UCLA",
+    midwest2: "Texas",
+    south2: "Arizona",
+    east2: "Marquette",
+    south3: "Baylor",
+    west3: "Gonzaga",
+    east3: "Kansas St",
+    midwest3: "Xavier",
+    west4: "UConn",
+    east4: "Tennessee",
+    midwest4: "Indiana",
+    south4: "Virginia",
+    south5: "San Diego St",
+    east5: "Duke",
+    west5: "Saint Mary's",
+    midwest5: "Miami",
+    midwest6: "Iowa State",
+    south6: "Creighton",
+    east6: "Kentucky",
+    west6: "TCU",
+    midwest7: "Texas A&M",
+    east7: "Michigan St",
+    south7: "Missouri",
+    west7: "Northwestern",
+    east8: "Memphis",
+    west8: "Arkansas",
+    south8: "Maryland",
+    midwest8: "Iowa",
+    east9: "FAU",
+    south9: "West Virginia",
+    midwest9: "Auburn",
+    west9: "Illinois",
+    west10: "Boise St",
+    midwest10: "Penn State",
+    east10: "USC",
+    south10: "Utah State",
+    south11: "NC State",
+    east11: "Providence",
+    midwest11: "Pittsburgh",
+    west11: "ASU/NEV",
+    south12: "Charleston",
+    east12: "Oral Roberts",
+    midwest12: "Drake",
+    west12: "VCU",
+    midwest13: "Kent State",
+    west13: "Iona",
+    south13: "Furman",
+    east13: "Lousiana",
+    midwest14: "Kennesaw St",
+    south14: "UCSB",
+    west14: "Grand Canyon",
+    east14: "Montana St",
+    west15: "UNC Asheville",
+    midwest15: "Colgate",
+    east15: "Vermont",
+    south15: "Princeton",
+    midwest16: "N Kentucky",
+    south16: "Texas A&M-CC",
+    east16: "TXSO/FDU",
+    west16: "Howard"
+  }
+
 
 const westr64t1 = document.getElementById("westr64t1");
 const westr64t2 = document.getElementById("westr64t2");
@@ -218,73 +210,73 @@ const southmidwestsemifinal = document.getElementById("southmidwestsemifinal");
 const final = document.getElementById("final");
 
 
-westr64t1.innerHTML = westTeams[0];
-westr64t2.innerHTML = westTeams[1];
-westr64t3.innerHTML = westTeams[2];
-westr64t4.innerHTML = westTeams[3];
-westr64t5.innerHTML = westTeams[4];
-westr64t6.innerHTML = westTeams[5];
-westr64t7.innerHTML = westTeams[6];
-westr64t8.innerHTML = westTeams[7];
-westr64t9.innerHTML = westTeams[8];
-westr64t10.innerHTML = westTeams[9];
-westr64t11.innerHTML = westTeams[10];
-westr64t12.innerHTML = westTeams[11];
-westr64t13.innerHTML = westTeams[12];
-westr64t14.innerHTML = westTeams[13];
-westr64t15.innerHTML = westTeams[14];
-westr64t16.innerHTML = westTeams[15];
+westr64t1.innerHTML = teams["west1"];
+westr64t2.innerHTML = teams["west2"];
+westr64t3.innerHTML = teams["west3"];
+westr64t4.innerHTML = teams["west4"];
+westr64t5.innerHTML = teams["west5"];
+westr64t6.innerHTML = teams["west6"];
+westr64t7.innerHTML = teams["west7"];
+westr64t8.innerHTML = teams["west8"];
+westr64t9.innerHTML = teams["west9"];
+westr64t10.innerHTML = teams["west10"];
+westr64t11.innerHTML = teams["west11"];
+westr64t12.innerHTML = teams["west12"];
+westr64t13.innerHTML = teams["west13"];
+westr64t14.innerHTML = teams["west14"];
+westr64t15.innerHTML = teams["west15"];
+westr64t16.innerHTML = teams["west16"];
 
-eastr64t1.innerHTML = eastTeams[0];
-eastr64t2.innerHTML = eastTeams[1];
-eastr64t3.innerHTML = eastTeams[2];
-eastr64t4.innerHTML = eastTeams[3];
-eastr64t5.innerHTML = eastTeams[4];
-eastr64t6.innerHTML = eastTeams[5];
-eastr64t7.innerHTML = eastTeams[6];
-eastr64t8.innerHTML = eastTeams[7];
-eastr64t9.innerHTML = eastTeams[8];
-eastr64t10.innerHTML = eastTeams[9];
-eastr64t11.innerHTML = eastTeams[10];
-eastr64t12.innerHTML = eastTeams[11];
-eastr64t13.innerHTML = eastTeams[12];
-eastr64t14.innerHTML = eastTeams[13];
-eastr64t15.innerHTML = eastTeams[14];
-eastr64t16.innerHTML = eastTeams[15];
+eastr64t1.innerHTML = teams["east1"]
+eastr64t2.innerHTML = teams["east2"];
+eastr64t3.innerHTML = teams["east3"];
+eastr64t4.innerHTML = teams["east4"];
+eastr64t5.innerHTML = teams["east5"];
+eastr64t6.innerHTML = teams["east6"];
+eastr64t7.innerHTML = teams["east7"];
+eastr64t8.innerHTML = teams["east8"];
+eastr64t9.innerHTML = teams["east9"];
+eastr64t10.innerHTML = teams["east10"];
+eastr64t11.innerHTML = teams["east11"];
+eastr64t12.innerHTML = teams["east12"];
+eastr64t13.innerHTML = teams["east13"];
+eastr64t14.innerHTML = teams["east14"];
+eastr64t15.innerHTML = teams["east15"];
+eastr64t16.innerHTML = teams["east16"];
 
-southr64t1.innerHTML = southTeams[0];
-southr64t2.innerHTML = southTeams[1];
-southr64t3.innerHTML = southTeams[2];
-southr64t4.innerHTML = southTeams[3];
-southr64t5.innerHTML = southTeams[4];
-southr64t6.innerHTML = southTeams[5];
-southr64t7.innerHTML = southTeams[6];
-southr64t8.innerHTML = southTeams[7];
-southr64t9.innerHTML = southTeams[8];
-southr64t10.innerHTML = southTeams[9];
-southr64t11.innerHTML = southTeams[10];
-southr64t12.innerHTML = southTeams[11];
-southr64t13.innerHTML = southTeams[12];
-southr64t14.innerHTML = southTeams[13];
-southr64t15.innerHTML = southTeams[14];
-southr64t16.innerHTML = southTeams[15];
+southr64t1.innerHTML = teams["south1"]
+southr64t2.innerHTML = teams["south2"];
+southr64t3.innerHTML = teams["south3"];
+southr64t4.innerHTML = teams["south4"];
+southr64t5.innerHTML = teams["south5"];
+southr64t6.innerHTML = teams["south6"];
+southr64t7.innerHTML = teams["south7"];
+southr64t8.innerHTML = teams["south8"];
+southr64t9.innerHTML = teams["south9"];
+southr64t10.innerHTML = teams["south10"];
+southr64t11.innerHTML = teams["south11"];
+southr64t12.innerHTML = teams["south12"];
+southr64t13.innerHTML = teams["south13"];
+southr64t14.innerHTML = teams["south14"];
+southr64t15.innerHTML = teams["south15"];
+southr64t16.innerHTML = teams["south16"];
 
-midwestr64t1.innerHTML = midwestTeams[0];
-midwestr64t2.innerHTML = midwestTeams[1];
-midwestr64t3.innerHTML = midwestTeams[2];
-midwestr64t4.innerHTML = midwestTeams[3];
-midwestr64t5.innerHTML = midwestTeams[4];
-midwestr64t6.innerHTML = midwestTeams[5];
-midwestr64t7.innerHTML = midwestTeams[6];
-midwestr64t8.innerHTML = midwestTeams[7];
-midwestr64t9.innerHTML = midwestTeams[8];
-midwestr64t10.innerHTML = midwestTeams[9];
-midwestr64t11.innerHTML = midwestTeams[10];
-midwestr64t12.innerHTML = midwestTeams[11];
-midwestr64t13.innerHTML = midwestTeams[12];
-midwestr64t14.innerHTML = midwestTeams[13];
-midwestr64t15.innerHTML = midwestTeams[14];
-midwestr64t16.innerHTML = midwestTeams[15];
+midwestr64t1.innerHTML = teams["midwest1"]
+midwestr64t2.innerHTML = teams["midwest2"];
+midwestr64t3.innerHTML = teams["midwest3"];
+midwestr64t4.innerHTML = teams["midwest4"];
+midwestr64t5.innerHTML = teams["midwest5"];
+midwestr64t6.innerHTML = teams["midwest6"];
+midwestr64t7.innerHTML = teams["midwest7"];
+midwestr64t8.innerHTML = teams["midwest8"];
+midwestr64t9.innerHTML = teams["midwest9"];
+midwestr64t10.innerHTML = teams["midwest10"];
+midwestr64t11.innerHTML = teams["midwest11"];
+midwestr64t12.innerHTML = teams["midwest12"];
+midwestr64t13.innerHTML = teams["midwest13"];
+midwestr64t14.innerHTML = teams["midwest14"];
+midwestr64t15.innerHTML = teams["midwest15"];
+midwestr64t16.innerHTML = teams["midwest16"];
 
 let bracket = {};
 let bracketId = 0;
@@ -395,7 +387,7 @@ function updateBestBracketsText(){
     const bestBracketsDisplay = document.getElementById('bestBrackets');
     if(perfectBracketsIds.length == 0){
         bestBracketsDisplay.style.display = "normal";
-        bestBracketsDisplay.innerHTML = `There best brackets are ${bestBracketsIds}`;
+        bestBracketsDisplay.innerHTML = `The best brackets are ${bestBracketsIds}`;
     } else {
         bestBracketsDisplay.style.display = "none";
     }
@@ -479,83 +471,83 @@ function compareBracket(){
 }
 
 function readBracket(){
-    westr64g1.innerHTML = bracket["westr64g1"];
-    westr64g2.innerHTML = bracket["westr64g2"];
-    westr64g3.innerHTML = bracket["westr64g3"];
-    westr64g4.innerHTML = bracket["westr64g4"];
-    westr64g5.innerHTML = bracket["westr64g5"];
-    westr64g6.innerHTML = bracket["westr64g6"];
-    westr64g7.innerHTML = bracket["westr64g7"];
-    westr64g8.innerHTML = bracket["westr64g8"];
-    westr32g1.innerHTML = bracket["westr32g1"];
-    westr32g2.innerHTML = bracket["westr32g2"];
-    westr32g3.innerHTML = bracket["westr32g3"];
-    westr32g4.innerHTML = bracket["westr32g4"];
-    westr16g1.innerHTML = bracket["westr16g1"];
-    westr16g2.innerHTML = bracket["westr16g2"];
-    weste8g1.innerHTML = bracket["weste8g1"];
-    semiweste8g1.innerHTML = bracket["weste8g1"];
+    westr64g1.innerHTML = teams[bracket["westr64g1"]];
+    westr64g2.innerHTML = teams[bracket["westr64g2"]];
+    westr64g3.innerHTML = teams[bracket["westr64g3"]];
+    westr64g4.innerHTML = teams[bracket["westr64g4"]];
+    westr64g5.innerHTML = teams[bracket["westr64g5"]];
+    westr64g6.innerHTML = teams[bracket["westr64g6"]];
+    westr64g7.innerHTML = teams[bracket["westr64g7"]];
+    westr64g8.innerHTML = teams[bracket["westr64g8"]];
+    westr32g1.innerHTML = teams[bracket["westr32g1"]];
+    westr32g2.innerHTML = teams[bracket["westr32g2"]];
+    westr32g3.innerHTML = teams[bracket["westr32g3"]];
+    westr32g4.innerHTML = teams[bracket["westr32g4"]];
+    westr16g1.innerHTML = teams[bracket["westr16g1"]];
+    westr16g2.innerHTML = teams[bracket["westr16g2"]];
+    weste8g1.innerHTML = teams[bracket["weste8g1"]];
+    semiweste8g1.innerHTML = teams[bracket["weste8g1"]];
 
-    eastr64g1.innerHTML = bracket["eastr64g1"];
-    eastr64g2.innerHTML = bracket["eastr64g2"];
-    eastr64g3.innerHTML = bracket["eastr64g3"];
-    eastr64g4.innerHTML = bracket["eastr64g4"];
-    eastr64g5.innerHTML = bracket["eastr64g5"];
-    eastr64g6.innerHTML = bracket["eastr64g6"];
-    eastr64g7.innerHTML = bracket["eastr64g7"];
-    eastr64g8.innerHTML = bracket["eastr64g8"];
-    eastr32g1.innerHTML = bracket["eastr32g1"];
-    eastr32g2.innerHTML = bracket["eastr32g2"];
-    eastr32g3.innerHTML = bracket["eastr32g3"];
-    eastr32g4.innerHTML = bracket["eastr32g4"];
-    eastr16g1.innerHTML = bracket["eastr16g1"];
-    eastr16g2.innerHTML = bracket["eastr16g2"];
-    easte8g1.innerHTML = bracket["easte8g1"];
-    semieaste8g1.innerHTML = bracket["easte8g1"];
+    eastr64g1.innerHTML = teams[bracket["eastr64g1"]];
+    eastr64g2.innerHTML = teams[bracket["eastr64g2"]];
+    eastr64g3.innerHTML = teams[bracket["eastr64g3"]];
+    eastr64g4.innerHTML = teams[bracket["eastr64g4"]];
+    eastr64g5.innerHTML = teams[bracket["eastr64g5"]];
+    eastr64g6.innerHTML = teams[bracket["eastr64g6"]];
+    eastr64g7.innerHTML = teams[bracket["eastr64g7"]];
+    eastr64g8.innerHTML = teams[bracket["eastr64g8"]];
+    eastr32g1.innerHTML = teams[bracket["eastr32g1"]];
+    eastr32g2.innerHTML = teams[bracket["eastr32g2"]];
+    eastr32g3.innerHTML = teams[bracket["eastr32g3"]];
+    eastr32g4.innerHTML = teams[bracket["eastr32g4"]];
+    eastr16g1.innerHTML = teams[bracket["eastr16g1"]];
+    eastr16g2.innerHTML = teams[bracket["eastr16g2"]];
+    easte8g1.innerHTML = teams[bracket["easte8g1"]];
+    semieaste8g1.innerHTML = teams[bracket["easte8g1"]];
 
-    southr64g1.innerHTML = bracket["southr64g1"];
-    southr64g2.innerHTML = bracket["southr64g2"];
-    southr64g3.innerHTML = bracket["southr64g3"];
-    southr64g4.innerHTML = bracket["southr64g4"];
-    southr64g5.innerHTML = bracket["southr64g5"];
-    southr64g6.innerHTML = bracket["southr64g6"];
-    southr64g7.innerHTML = bracket["southr64g7"];
-    southr64g8.innerHTML = bracket["southr64g8"];
-    southr32g1.innerHTML = bracket["southr32g1"];
-    southr32g2.innerHTML = bracket["southr32g2"];
-    southr32g3.innerHTML = bracket["southr32g3"];
-    southr32g4.innerHTML = bracket["southr32g4"];
-    southr16g1.innerHTML = bracket["southr16g1"];
-    southr16g2.innerHTML = bracket["southr16g2"];
-    southe8g1.innerHTML = bracket["southe8g1"];
-    semisouthe8g1.innerHTML = bracket["southe8g1"];
+    southr64g1.innerHTML = teams[bracket["southr64g1"]];
+    southr64g2.innerHTML = teams[bracket["southr64g2"]];
+    southr64g3.innerHTML = teams[bracket["southr64g3"]];
+    southr64g4.innerHTML = teams[bracket["southr64g4"]];
+    southr64g5.innerHTML = teams[bracket["southr64g5"]];
+    southr64g6.innerHTML = teams[bracket["southr64g6"]];
+    southr64g7.innerHTML = teams[bracket["southr64g7"]];
+    southr64g8.innerHTML = teams[bracket["southr64g8"]];
+    southr32g1.innerHTML = teams[bracket["southr32g1"]];
+    southr32g2.innerHTML = teams[bracket["southr32g2"]];
+    southr32g3.innerHTML = teams[bracket["southr32g3"]];
+    southr32g4.innerHTML = teams[bracket["southr32g4"]];
+    southr16g1.innerHTML = teams[bracket["southr16g1"]];
+    southr16g2.innerHTML = teams[bracket["southr16g2"]];
+    southe8g1.innerHTML = teams[bracket["southe8g1"]];
+    semisouthe8g1.innerHTML = teams[bracket["southe8g1"]];
 
-    midwestr64g1.innerHTML = bracket["midwestr64g1"];
-    midwestr64g2.innerHTML = bracket["midwestr64g2"];
-    midwestr64g3.innerHTML = bracket["midwestr64g3"];
-    midwestr64g4.innerHTML = bracket["midwestr64g4"];
-    midwestr64g5.innerHTML = bracket["midwestr64g5"];
-    midwestr64g6.innerHTML = bracket["midwestr64g6"];
-    midwestr64g7.innerHTML = bracket["midwestr64g7"];
-    midwestr64g8.innerHTML = bracket["midwestr64g8"];
-    midwestr32g1.innerHTML = bracket["midwestr32g1"];
-    midwestr32g2.innerHTML = bracket["midwestr32g2"];
-    midwestr32g3.innerHTML = bracket["midwestr32g3"];
-    midwestr32g4.innerHTML = bracket["midwestr32g4"];
-    midwestr16g1.innerHTML = bracket["midwestr16g1"];
-    midwestr16g2.innerHTML = bracket["midwestr16g2"];
-    midweste8g1.innerHTML = bracket["midweste8g1"];
-    semimidweste8g1.innerHTML = bracket["midweste8g1"];
+    midwestr64g1.innerHTML = teams[bracket["midwestr64g1"]];
+    midwestr64g2.innerHTML = teams[bracket["midwestr64g2"]];
+    midwestr64g3.innerHTML = teams[bracket["midwestr64g3"]];
+    midwestr64g4.innerHTML = teams[bracket["midwestr64g4"]];
+    midwestr64g5.innerHTML = teams[bracket["midwestr64g5"]];
+    midwestr64g6.innerHTML = teams[bracket["midwestr64g6"]];
+    midwestr64g7.innerHTML = teams[bracket["midwestr64g7"]];
+    midwestr64g8.innerHTML = teams[bracket["midwestr64g8"]];
+    midwestr32g1.innerHTML = teams[bracket["midwestr32g1"]];
+    midwestr32g2.innerHTML = teams[bracket["midwestr32g2"]];
+    midwestr32g3.innerHTML = teams[bracket["midwestr32g3"]];
+    midwestr32g4.innerHTML = teams[bracket["midwestr32g4"]];
+    midwestr16g1.innerHTML = teams[bracket["midwestr16g1"]];
+    midwestr16g2.innerHTML = teams[bracket["midwestr16g2"]];
+    midweste8g1.innerHTML = teams[bracket["midweste8g1"]];
+    semimidweste8g1.innerHTML = teams[bracket["midweste8g1"]];
 
-    westeastsemifinal.innerHTML = bracket["westeastsemifinal"];
-    southmidwestsemifinal.innerHTML = bracket["southmidwestsemifinal"];
+    westeastsemifinal.innerHTML = teams[bracket["westeastsemifinal"]];
+    southmidwestsemifinal.innerHTML = teams[bracket["southmidwestsemifinal"]];
 
-    final.innerHTML = bracket["final"];
+    final.innerHTML = teams[bracket["final"]];
     updateTitle();
     compareBracket();
 }
 
 function updateTitle() {
     const title = document.getElementById('title');
-    title.innerHTML = `You are viewing Bracket ${bracketId + 1} - ${bracket.final} Wins (${bracket.points}) points`;
+    title.innerHTML = `You are viewing Bracket ${bracketId + 1} - ${teams[bracket.final]} Wins (${bracket.points}) points`;
 }
